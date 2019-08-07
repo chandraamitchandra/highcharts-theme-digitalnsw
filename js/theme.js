@@ -147,7 +147,7 @@ Highcharts.theme = {
     },
     
         credits: {
-            enabled: true
+            enabled: false
         },
        
 };

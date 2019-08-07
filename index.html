@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">  
+
+<div class="row my-5">
+  
+    <div class="col-md-6">
+        <div class="card">
+        <div class="card-header text-center text-white" style="background-color:#002664;"><h3> Total Applications lodged</h3></div>
+        <div class="card-body text-center text-white" style="background-color:#d7153a;">
+          
+<h1 id="totalApps"></h1></div>
+         <div class="card-footer text-muted text-center"><small>Total number of applications submitted through NSW Planning Portal</small></div>
+        </div>
+        </div>
+        <div class="col-md-6 ">   
+        <div class="card">
+         <div class="card-header text-center text-white" style="background-color:#002664;"> <h3> Total CNR's lodged</h3></div>
+         <div class="card-body text-cecard-body text-center text-white" style="background-color:#d7153a;"> <h1 id="totalCnr"></h1></div>
+         <div class="card-footer text-muted text-center"><small>Concurrence and Referrals submitted through NSW Planning Portal</small></div>
+        </div>
+        </div>
+        
+
+
+</div>  
+
+    <div class="input-group my-5 jumbotron">
+<h2 class="col-md-6 disabled"> Select a council for all applications</h2>
+  <select class="col-md-6 custom-select" id="councils">
+    
+  </select>
+</div>
+
+<div class="row" id="container"></div>
+
+<div class="row"><div class="col-md-6" id="container2"></div>
+<div class="col-md-6" id="container3"></div>
+</div>
+
+    <div class="input-group my-5 jumbotron">
+<h2 class="col-md-6"> Select a council for CNR applications</h2>
+  <select class="custom-select" id="cnrCouncils">
+    
+  </select>
+</div>
+<div class="row" id="container4"></div>
+<!--<div class="row">-->
+<!--    <div class="col-md-6">-->
+<!--        <ul id="dalist">-->
+        
+<!--    </ul>-->
+<!--    </div>-->
+<!--    <div class="col-md-6">-->
+<!--      <ul id="cnrlist">-->
+        
+<!--    </ul>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+<div class="accordion my-5" id="accordionExample">
+  <div class="card">
+    <div class="card-header text-white" style="background-color:#002664;" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <h5 class="text-white">Total Councils</h5>
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <ul id="dalist">
+        
+    </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header text-white" style="background-color:#002664;" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           <h5 class="text-white">CNR Councils</h5>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+       <ul id="cnrlist">
+       
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/script.min.js"></script>
+<script type="text/javascript" src="js/theme.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+    
+</html>
